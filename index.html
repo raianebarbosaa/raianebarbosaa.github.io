@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="auth-container">
+        <a href="javascript:history.back()" class="btn-back">Voltar</a>
+
+            <div class="auth-box" id="login-box">
+                <h2>Entrar</h2>
+                <form id="login-form" action="php/login.php" method="post">
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Entrar</button>
+                    <p><a href="esqueci senha.html" class="btn-forgot-password">Esqueci minha senha</a></p>
+                    <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
+                </form>
+            </div>
+        </div>
+</body>
+</html>
+
+
