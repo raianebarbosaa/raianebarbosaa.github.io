@@ -1,11 +1,13 @@
-/* Estilos Gerais */
-body {
+ /* Estilos Gerais */
+ body {
     font-family: 'Snell Roundhand';
     margin: 0;
     padding: 0;
-    background-color: #ffeab6;
+    background-color: #ffd87e;
     color: #333;
-
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
 }
 
 /* Cabeçalho */
@@ -16,16 +18,13 @@ header {
     padding: 10px 20px;
     background-color: #fff8e6;
     color: rgb(4, 2, 2);
-
     border-bottom: 2px solid #ffffff;
-
-
 }
 
 header .logo h1 {
     margin: 0;
     font-size: 24px;
-             box-shadow: 0 4px 6px rgb(255, 136, 0);
+    box-shadow: 0 4px 6px rgb(255, 136, 0);
 }
 
 nav ul {
@@ -48,6 +47,13 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #e08900;
 }
+
+
+
+
+
+
+
 
 /* Seção topo */
 .topo {
@@ -92,7 +98,7 @@ nav ul li a:hover {
 }
 
 .topo-imagem {
-    max-width: 20%;
+    max-width: 15%;
 }
 
 .topo-imagem img {
@@ -100,6 +106,71 @@ nav ul li a:hover {
     height: auto;
     border-radius: 10px;
 }
+/* biografia */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fbeec0f9;
+    border: 1px solid #ebead9;
+    border-radius: 10px;
+}
+.text-content {
+    max-width: 450px;
+    font-family: 'Snell Roundhand';
+}
+
+.image-content img {
+    width: 230px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+/* Seção Galeria */
+.galeria {
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.galeria h2 {
+    font-size: 32px;
+    font-family: 'Snell Roundhand';
+}
+
+.galeria-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    flex-wrap: wrap; /* Permite que as imagens quebrem para a linha seguinte em telas menores */
+    gap: 20px;
+}
+
+.galeria-container img {
+    padding: 10px;
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    border: 2px solid #000;
+    transition: transform 0.3s ease;
+}
+
+.galeria-container img:hover {
+    transform: scale(1.10);
+}
+
+
+
+
+
 
 /* biografia */
 .container {
@@ -112,52 +183,25 @@ nav ul li a:hover {
     background-color: #ffffff3d;
     border: 1px solid #00000047;
     border-radius: 10px;
+    
 }
-.text-content {
+.texto-conteudo {
     max-width: 450px;
     font-family: 'Snell Roundhand';
+    font-size: 18px;
+    text-align: center;
 }
 
-.image-content img {
+.imagem img {
     width: 230px;
     border-radius: 10px;
     box-shadow: 20px 20px 12px rgba(0, 0, 0, 0.636);
 }
 
-/* Seção Galeria */
-.galeria {
-    padding: 20px;
-    background-color: #ffffff;
-    text-align: center;
-}
-.galeria img {
-    transition: transform 0.3s ease-in-out;
-}
 
-.galeria img:hover {
-    transform: scale(1.05);
-}
 
-.galeria h2 {
-    font-size: 32px;
-    font-family: 'Snell Roundhand';
-    
-}
 
-.galeria-container {
-    display: flex;
-    gap: 20px;
-    
-}
 
-.galeria-container img {
-  padding: 10px;
-  width: 120px;
-  height: 120px;
-    border-radius: 15px;
-    border: 2px solid #000;
-
-}
 
 /* Seção de Vídeos */
 .video-container {
@@ -178,8 +222,9 @@ nav ul li a:hover {
 
 
 
+
 /* Rodapé */
-footer {
+.rodape {
     text-align: center;
     margin-top: 40px;
     background-color: #fdd266;
@@ -191,26 +236,12 @@ footer {
     font-size: 100%;
 }
 
-footer p {
+.rodape p {
     margin: 0;
     padding: 0;
     font-size: 1.2rem;
 }
-  /* Ícones das Redes Sociais */
-  .social-icons {
-    margin-top: 20px;
-}
 
-.social-icons a {
-    margin: 0 10px;
-    color: #3E2723;
-    font-size: 1.5em;
-    transition: color 0.3s;
-}
-
-.social-icons a:hover {
-    color: #D2691E;
-}
 /* Responsividade para diferentes tamanhos de tela */
 @media (max-width: 768px) {
     .topo, .bio-container, .video-container, .galeria-container {
@@ -235,7 +266,7 @@ footer p {
         flex-direction: column;
         align-items: center;
     }
-    .galeria-container img, .video {
+    .imagem img, .video {
         width: 150px;
         height: 150px;
     }
@@ -247,7 +278,7 @@ footer p {
         flex-direction: column;
         align-items: center;
     }
-    .galeria-container img, .video {
+    .imagem img, .video {
         width: 150px;
         height: 150px;
     }
@@ -259,7 +290,7 @@ footer p {
         flex-direction: column;
         align-items: center;
     }
-    .galeria-container img {
+    .imagem img {
         width: 150px;
         height: 150px;
     }
@@ -267,8 +298,8 @@ footer p {
 
 /* 1024x768 */
 @media (max-width: 1024px) {
-    .galeria-container img {
-        width: 120px;
-       height: 120px;
+    .imagem img {
+        width: 200px;
+       height: 200px;
     }
 }

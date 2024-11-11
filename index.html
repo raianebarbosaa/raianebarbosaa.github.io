@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +7,32 @@
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div class="auth-container">
-        <a href="javascript:history.back()" class="btn-back">Voltar</a>
+    <div class="container">
+        <!-- Caixa de Login -->
+        <div class="caixa-login" id="login-box">
+            <h2>Bem-vindo!</h2>
 
-            <div class="auth-box" id="login-box">
-                <h2>Entrar</h2>
-                <form id="login-form" action="php/login.php" method="post">
-                    <div class="input-group">
-                        <label for="email">Email</label>
-                        <input type="text" id="email" name="email" required>
-                    </div>
-                    <div class="input-group">
-                        <label for="senha">Senha</label>
-                        <input type="password" id="senha" name="senha" required>
-                    </div>
-                    <button type="submit" class="btn-primary">Entrar</button>
-                    <p><a href="esqueci senha.html" class="btn-forgot-password">Esqueci minha senha</a></p>
-                    <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
-                </form>
-            </div>
+            <form id="login-form" action="php/login.php" method="post">
+                <div class="input-grupo">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+
+                <div class="input-grupo">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                </div>
+
+                <button type="submit" class="botao">Entrar</button>
+                <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
+
+        
+            </form>
         </div>
+        
+        <!-- Imagem Lateral -->
+        <div class="imagem-lateral">
+        </div>
+    </div>
 </body>
 </html>
-
-

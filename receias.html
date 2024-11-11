@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas - Confeitaria</title>
+    <style>
+       /* Estilos Gerais */
+       body {
+        font-family: 'Snell Roundhand';
+           margin: 0;
+           padding: 0;
+           background-color: #f7f3e9;
+           color: #333;
+       }
+
+       /* Cabeçalho */
+       header {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding: 10px 20px;
+           background-color: #fdd266;
+           color: rgb(4, 2, 2);
+       }
+
+       header .logo h1 {
+           margin: 0;
+           font-size: 24px;
+       }
+
+       nav ul {
+           list-style: none;
+           display: flex;
+           gap: 20px;
+           margin: 0;
+           padding: 0;
+       }
+
+       nav ul li {
+           display: inline-block;
+       }
+
+       nav ul li a {
+           color: #000000;
+           text-decoration: none;
+           font-size: 18px;
+           padding: 5px 10px;
+           border-radius: 5px;
+           transition: background-color 0.3s ease;
+       }
+
+       nav ul li a:hover {
+           background-color: #e08900;
+       }
+
+       /* Estilos da Galeria de Receitas */
+       .conteiner {
+           max-width: 1200px;
+           margin: 40px auto;
+           padding: 50px;
+           background-color: white;
+           border-radius: 10px;
+           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       }
+
+       h1 {
+           text-align: center;
+           color: #000000;
+           margin-bottom: 20px;
+       }
+
+       .galeria-receitas {
+           display: flex;
+           justify-content: space-between;
+           flex-wrap: wrap;
+       }
+
+       .item-receita {
+           width: 30%;
+           background-color: #fff;
+           border-radius: 10px;
+           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+           text-align: center;
+           padding: 15px;
+           margin-bottom: 30px;
+       }
+
+       .item-receita img {
+           width: 250px;
+           height: 150px;
+           border-radius: 10px;
+           margin-bottom: 15px;
+       }
+
+       h2 {
+           color: #ff9900;
+           margin-bottom: 10px;
+       }
+
+       p {
+           margin-bottom: 15px;
+           color: #666;
+       }
+
+       a {
+           display: inline-block;
+           padding: 10px 20px;
+           background-color: #ffc003;
+           color: rgb(0, 0, 0);
+           text-decoration: none;
+           border-radius: 10px;
+           transition: background-color 0.3s ease;
+       }
+
+       a:hover {
+           background-color: #ff8000;
+       }
+
+       footer {
+           text-align: center;
+           margin-top: 40px;
+           color: #888;
+       }
+
+       /* Responsividade */
+       @media (max-width: 1024px) {
+           .item-receita {
+               width: 45%; /* Para telas intermediárias */
+           }
+       }
+
+       @media (max-width: 768px) {
+           .item-receita {
+               width: 100%; /* Itens ocupam a largura total em dispositivos móveis */
+               margin-bottom: 20px;
+           }
+
+           .conteiner {
+               padding: 10px;
+           }
+
+           h1 {
+               font-size: 2em;
+           }
+
+           h2 {
+               font-size: 1.4em;
+           }
+
+           p {
+               font-size: 1em;
+           }
+
+           a {
+               font-size: 1em;
+           }
+       }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>Amor e Doce</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contato.html" class="nav-link">Contato</a></li>
+                <li><a href="#" id="logout-btn" class="nav-link">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+       
+    <!-- Conteúdo Principal -->
+    <div class="conteiner">
+        <h1>Venha apreciar as delícias que compõem nosso cardápio!</h1>
+
+        <div class="galeria-receitas">
+            <!-- Receita 1 -->
+            <div class="item-receita">
+                <img src="img/bolinhos.jpg" alt="Bolo de Chocolate">
+                <h2>Bolos</h2>
+                <p>Descubra nossa seleção de bolos tradicionais e especiais, feitos com carinho e ingredientes de alta qualidade. Desde os clássicos atemporais até sabores inovadores, temos opções para todos os paladares.</p>
+                <a href="bolochoc.html">Ver bolos</a>
+            </div>
+
+            <!-- Receita 2 -->
+            <div class="item-receita">
+                <img src="img/salga.jpg" alt="Salgados">
+                <h2>Salgados</h2>
+                <p>Explore nossa deliciosa variedade de salgados, preparados com ingredientes frescos e selecionados. Desde coxinhas e quibes até opções inovadoras, nossos salgados são perfeitos para qualquer ocasião.</p>
+                <a href="salgados.html">Ver salgados</a>
+            </div>
+
+            <!-- Receita 3 -->
+            <div class="item-receita">
+                <img src="img/cafe" alt="Café">
+                <h2>Café</h2>
+                <p>Descubra nossas opções de cafés gelados e quentes, elaborados com grãos selecionados. Cada xícara oferece uma experiência única. Venha saborear momentos de prazer em cada gole!</p>
+                <a href="cafe.html">Ver café</a>
+            </div>
+
+            <!-- Receita 4 -->
+            <div class="item-receita">
+                <img src="img/diver.jpg" alt="Diversos">
+                <h2>Diversos</h2>
+                <p>Aproveite nossa seleção diversificada de opções, que vão além dos tradicionais. Cada item é cuidadosamente elaborado para surpreender seu paladar.</p>
+                <a href="diversos.html">Ver diversos</a>
+            </div>
+
+            <!-- Receita 5 -->
+            <div class="item-receita">
+                <img src="img/bebida" alt="Bebidas">
+                <h2>Bebidas</h2>
+                <p>Refresque-se com nossa variada seleção de bebidas, que inclui Soda Italiana, refrigerantes, águas e chás especiais. Cada bebida é preparada com ingredientes frescos e de qualidade.</p>
+                <a href="bebidas.html">Ver bebidas</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Confeitaria Doces Perfeitos</p>
+    </footer>
+
+</body>
+</html>

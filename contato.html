@@ -57,13 +57,13 @@
 
         /* Seção principal de contato */
         main {
-            flex: 1; /* Faz com que o main ocupe o espaço restante */
+            flex: 1; 
             display: flex;
-            justify-content: center; /* Centraliza horizontalmente */
-            align-items: center; /* Centraliza verticalmente */
+            justify-content: center; 
+            align-items: center; 
         }
 
-        .contact-section {
+        .secao-contato {
             max-width: 800px;
             margin: 40px auto;
             padding: 20px;
@@ -74,18 +74,18 @@
         }
 
         /* Seção Redes Sociais */
-        .social-media {
+        .redes-sociais {
             text-align: center;
             margin-top: 30px;
         }
 
-        .social-icons {
+        .icones-sociais {
             display: flex;
             justify-content: center;
             gap: 20px;
         }
 
-        .social-icon {
+        .icone-social {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -99,34 +99,34 @@
         }
 
         /* Estilos Específicos para cada Rede Social */
-        .social-icon.facebook {
+        .icone-social.facebook {
             background-image: url('img/face.png');
         }
 
-        .social-icon.instagram {
+        .icone-social.instagram {
             background-image: url('img/2437730f7e3a5705e205e67fa2cd1020.jpg');
         }
 
-        .social-icon.whatsapp {
+        .icone-social.whatsapp {
             background-image: url('img/WHAT.png');
         }
 
         /* Rodapé */
         footer {
-            background-color: #000000dd;
+            background-color: #000000;
             color: #ffffff;
-            padding: 40px 20px;
+            padding: 30px 20px;
             font-size: 18px;
-            width: 97%;
+            width: 98%;
         }
 
-        .footer-container {
+        .container-rodape {
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
 
-        .footer-map iframe {
+        .mapa-rodape iframe {
             border-radius: 35px;
             box-shadow: 10px 12px 5px rgb(255, 170, 0);
             height: 159px;
@@ -134,20 +134,20 @@
         }
 
         @media (min-width: 768px) {
-            .footer-container {
+            .container-rodape {
                 flex-direction: row;
                 justify-content: space-between;
             }
         }
 
-        .footer-logo h2 {
+        .logo-rodape h2 {
             font-size: 24px;
             color: #ffffff;
         }
 
         /* Responsividade para diferentes tamanhos de tela */
         @media (max-width: 768px) {
-            .contact-section {
+            .secao-contato {
                 padding: 10px;
             }
 
@@ -161,7 +161,7 @@
                 align-items: center;
             }
 
-            .social-icons {
+            .icones-sociais {
                 flex-direction: column;
                 gap: 10px;
             }
@@ -169,18 +169,18 @@
 
         /* Melhorias de responsividade para telas menores */
         @media (max-width: 480px) {
-            .contact-section {
+            .secao-contato {
                 padding: 15px;
             }
 
-            .social-icon {
+            .icone-social {
                 width: 40px;
                 height: 40px;
             }
         }
 
         @media (max-width: 320px) {
-            .social-icon {
+            .icone-social {
                 width: 30px;
                 height: 30px;
             }
@@ -204,21 +204,21 @@
 
     <!-- Seção principal de contato -->
     <main>
-        <section class="contact-section">
+        <section class="secao-contato">
             <h1>Entre em Contato</h1>
             <p>Estamos prontos para atender você e responder todas as suas dúvidas. Veja abaixo como você pode entrar em contato conosco.</p>
 
             <!-- Seção de Redes Sociais -->
-            <div class="social-media">
+            <div class="redes-sociais">
                 <h2>Siga-nos nas Redes Sociais</h2>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com" target="_blank" class="social-icon facebook" title="Facebook"></a>
-                    <a href="https://www.instagram.com" target="_blank" class="social-icon instagram" title="Instagram"></a>
-                    <a href="https://wa.me/" target="_blank" class="social-icon whatsapp" title="WhatsApp"></a>
+                <div class="icones-sociais">
+                    <a href="https://www.facebook.com/priscilla.pereira.12914/" target="_blank" class="icone-social facebook" title="Facebook"></a>
+                    <a href="https://www.instagram.com/cakehouseconfeitarialins/" target="_blank" class="icone-social instagram" title="Instagram"></a>
+                    <a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2Fmessage%2F6NUFKRLQFX36F1%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAaZ8U_KbpZCCcu9rQ-T5e-d67z0_lENi0smQJQlSE7kpz7HjuD76kIWpIfE_aem_EDTkU_vSu9C1kkO2TvVCWg&e=AT0UpbN2aiKtSxAlgGLWE9bfvg_P6M3oS-dcreID_UNckPeEMcwSh-NbWAZUSJVLDytlEPOI43OteBXU-EHcBjhTHr6TEi9B13_qVzs" target="_blank" class="icone-social whatsapp" title="WhatsApp"></a>
                 </div>
             </div>
 
-            <div class="cta-section">
+            <div class="secao-cta">
                 <p>Entre em contato conosco para informações sobre encomendas, eventos ou para uma consulta personalizada. Estamos ansiosos para ouvir de você!</p>
             </div>
         </section>
@@ -226,19 +226,19 @@
 
     <!-- Adicionando o rodapé -->
     <footer>
-        <div class="footer-container">
-            <div class="footer-logo">
+        <div class="container-rodape">
+            <div class="logo-rodape">
                 <h2>Cake House</h2>
                 <p>Doces que aquecem o coração.</p>
             </div>
-            <div class="footer-contact">
+            <div class="contato-rodape">
                 <h3>Contato</h3>
                 <p>Rua Alcyr Goncalves Lopes n° 270 - Lins-São Paulo</p>
                 <p>CEP: 16403518</p>
                 <p>+55 (14) 98807-7897</p>
                 <p>priscilacompras@outlook.com</p>
             </div>
-            <div class="footer-map">
+            <div class="mapa-rodape">
                 <h3>Localização</h3>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3707.0640203821504!2d-49.73499542549561!3d-21.700238295865816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94be1581f99c1cdf%3A0x4d5516da6f9b5b20!2sR.%20Alcyr%20Gon%C3%A7alves%20Lopes%2C%20270%20-%20Lins%2C%20SP%2C%2016403-518!5e0!3m2!1spt-BR!2sbr!4v1728603930547!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
